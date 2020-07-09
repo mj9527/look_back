@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Section1.2 · GitBook</title>
+        <title>基础 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -12,20 +12,20 @@
         
         
     
-    <link rel="stylesheet" href="../gitbook/style.css">
+    <link rel="stylesheet" href="style.css">
 
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook-plugin-search/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -53,14 +53,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../golang/" />
+    <link rel="next" href="../markdown/" />
     
     
-    <link rel="prev" href="section1.1.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../gitbook/">
+        <li class="chapter " data-level="1.2" data-path="./">
             
-                <a href="../gitbook/">
+                <a href="./">
             
                     
                     Gitbook
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../gitbook/base.html">
+        <li class="chapter active" data-level="1.2.1" data-path="base.html">
             
-                <a href="../gitbook/base.html">
+                <a href="base.html">
             
                     
                     基础
@@ -166,9 +166,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../c++/">
             
-                <a href="./">
+                <a href="../c++/">
             
                     
                     C++
@@ -180,9 +180,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="section1.1.html">
+        <li class="chapter " data-level="1.4.1" data-path="../c++/section1.1.html">
             
-                <a href="section1.1.html">
+                <a href="../c++/section1.1.html">
             
                     
                     Section1.1
@@ -193,9 +193,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="section1.2.html">
+        <li class="chapter " data-level="1.4.2" data-path="../c++/section1.2.html">
             
-                <a href="section1.2.html">
+                <a href="../c++/section1.2.html">
             
                     
                     Section1.2
@@ -447,7 +447,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Section1.2</a>
+        <a href=".." >基础</a>
     </h1>
 </div>
 
@@ -462,7 +462,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8FDB;&#x9636;">&#x8FDB;&#x9636;</h1>
+                                <h1 id="&#x57FA;&#x672C;&#x547D;&#x4EE4;">&#x57FA;&#x672C;&#x547D;&#x4EE4;</h1>
+<p>&#x4E66;&#x7C4D;&#x521D;&#x59CB;&#x5316; gitbook init</p>
+<p>&#x4E66;&#x7C4D;&#x6784;&#x5EFA; gitbook build</p>
+<p>&#x542F;&#x52A8;&#x4E66;&#x7C4D;&#x9884;&#x89C8; gitbook serve</p>
+<h1 id="nginx-&#x670D;&#x52A1;&#x914D;&#x7F6E;">nginx &#x670D;&#x52A1;&#x914D;&#x7F6E;</h1>
+<p>&#x9759;&#x6001;&#x914D;&#x7F6E;&#xFF0C;&#x6307;&#x5B9A;gitbook&#x751F;&#x6210;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x76EE;&#x5F55;</p>
+<pre><code>   location /book {
+           alias /Users/mjzheng/Documents/look_back/_book;
+           index  index.html index.htm;
+           autoindex on;
+      }
+</code></pre><h1 id="nginx-&#x9884;&#x89C8;&#x5730;&#x5740;">nginx &#x9884;&#x89C8;&#x5730;&#x5740;</h1>
+<p><a href="http://localhost:8080/book/" target="_blank">&#x9996;&#x9875;</a></p>
 
                                 
                                 </section>
@@ -490,12 +502,12 @@
 
             
                 
-                <a href="section1.1.html" class="navigation navigation-prev " aria-label="Previous page: Section1.1">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Gitbook">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../golang/" class="navigation navigation-next " aria-label="Next page: Golang">
+                <a href="../markdown/" class="navigation navigation-next " aria-label="Next page: Markdown">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -506,37 +518,37 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Section1.2","level":"1.4.2","depth":2,"next":{"title":"Golang","level":"1.5","depth":1,"path":"golang/README.md","ref":"golang/README.md","articles":[{"title":"基础","level":"1.5.1","depth":2,"path":"golang/base.md","ref":"golang/base.md","articles":[]},{"title":"进阶","level":"1.5.2","depth":2,"path":"golang/advanced.md","ref":"golang/advanced.md","articles":[]},{"title":"网络","level":"1.5.3","depth":2,"path":"golang/net.md","ref":"golang/net.md","articles":[]}]},"previous":{"title":"Section1.1","level":"1.4.1","depth":2,"path":"c++/section1.1.md","ref":"c++/section1.1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"c++/section1.2.md","mtime":"2020-06-16T01:31:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-17T11:01:00.516Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"基础","level":"1.2.1","depth":2,"next":{"title":"Markdown","level":"1.3","depth":1,"path":"markdown/README.md","ref":"markdown/README.md","articles":[{"title":"基本语法","level":"1.3.1","depth":2,"path":"markdown/base.md","ref":"markdown/base.md","articles":[]}]},"previous":{"title":"Gitbook","level":"1.2","depth":1,"path":"gitbook/README.md","ref":"gitbook/README.md","articles":[{"title":"基础","level":"1.2.1","depth":2,"path":"gitbook/base.md","ref":"gitbook/base.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gitbook/base.md","mtime":"2020-06-16T02:22:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-17T11:01:00.516Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <script src="../gitbook/gitbook.js"></script>
-    <script src="../gitbook/theme.js"></script>
+    <script src="gitbook.js"></script>
+    <script src="theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook-plugin-search/search-engine.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook-plugin-search/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook-plugin-lunr/lunr.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook-plugin-lunr/search-lunr.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
