@@ -1,29 +1,3 @@
-# 静态库.a制作
-1. xcode 创建Cocoa Touch Static Library
-2. 导入需要打包的资源文件包含（.h, .m, .mm）
-3. 修改项目配置把.h 文件放进[New Headers Phase]
-4. [Copy Files] 添加需要导出的头文件
-5. [Build Configuration] 修改为release 
-6. [Build Active Architecture Only] Release 选项设置为NO
-7. 真机和模拟器静态库合并为一个静态库 lipo -create 第一个.a文件的绝对路径 第二个.a文件的绝对路径 -output 最终的.a文件路径
-
-# 静态库.framework制作
-1. xcode 创建Cocoa Touch Framework
-2. 导入需要打包的资源文件包含（.h, .m, .mm）
-3. 修改项目配置把需要暴露的头文件放到[Headers]的public 目录下
-4. [Build Configuration] 修改为release 
-5. [Build Active Architecture Only] Release 选项设置为NO
-6. 修改[Mach-O Type] 为Static Library
-7. 真机和模拟器静态库合并为一个静态库 lipo -create 第一个.a文件的绝对路径 第二个.a文件的绝对路径 -output 最终的.a文件路径
-8. 合并文件为framework里面的静态库文件
-
-
-# 动态库制作
-
-# 多线程编程
-
-# 多线程同步机制
-
 # 定时器
 - NSTimer
 缺点：存在延迟
@@ -49,7 +23,6 @@
 ```
 
 - CADisplayLink
-
 1. 创建方法
     displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(handleDisplayLink:)];
     [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
@@ -64,27 +37,4 @@
     延迟：iOS设备的屏幕刷新频率是固定的，CADisplayLink在正常情况下会在每次刷新结束都被调用，精确度相当高。但如果调用的方法比较耗时，超过了屏幕刷新周期，就会导致跳过若干次回调调用机会。
              如果CPU过于繁忙，无法保证屏幕60次/秒的刷新率，就会导致跳过若干次调用回调方法的机会，跳过次数取决CPU的忙碌程度。
     使用场景：从原理上可以看出，CADisplayLink适合做界面的不停重绘，比如视频播放的时候需要不停地获取下一帧用于界面渲染。
-
-- GCD
-```
- NSTimeInterval period = 1.0; //设置时间间隔
-    dispatch_queue_t queue = dispatch_get_main_queue();
-    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    dispatch_source_set_timer(_timer, dispatch_walltime(NULL, 0), period * NSEC_PER_SEC, 0); //每秒执行
-    dispatch_source_set_event_handler(_timer, ^{
-        //在这里执行事件
-        static int count = 0;
-        NSLog(@"gcd %d", count++);
-    });
-    
-    dispatch_resume(_timer);
-```
-
-# 网络
-- TCP
-- UDP
-- HTTP
-
-# 文件
-
 

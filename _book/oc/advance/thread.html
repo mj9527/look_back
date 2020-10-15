@@ -1,0 +1,896 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>线程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="runtime.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../gitbook/">
+            
+                <a href="../../gitbook/">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../gitbook/base.html">
+            
+                <a href="../../gitbook/base.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../markdown/">
+            
+                <a href="../../markdown/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../markdown/base.html">
+            
+                <a href="../../markdown/base.html">
+            
+                    
+                    基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../c++/">
+            
+                <a href="../../c++/">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../c++/section1.1.html">
+            
+                <a href="../../c++/section1.1.html">
+            
+                    
+                    Section1.1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../c++/section1.2.html">
+            
+                <a href="../../c++/section1.2.html">
+            
+                    
+                    Section1.2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../golang/">
+            
+                <a href="../../golang/">
+            
+                    
+                    Golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../golang/base.html">
+            
+                <a href="../../golang/base.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../golang/advanced.html">
+            
+                <a href="../../golang/advanced.html">
+            
+                    
+                    进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../golang/net.html">
+            
+                <a href="../../golang/net.html">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Object-C
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../base/base.html">
+            
+                <a href="../base/base.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../base/class.html">
+            
+                <a href="../base/class.html">
+            
+                    
+                    类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../base/datatype.html">
+            
+                <a href="../base/datatype.html">
+            
+                    
+                    基础数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../base/array.html">
+            
+                <a href="../base/array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../base/dictionary.html">
+            
+                <a href="../base/dictionary.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../base/block.html">
+            
+                <a href="../base/block.html">
+            
+                    
+                    块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.2.1" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="runtime.html">
+            
+                <a href="runtime.html">
+            
+                    
+                    runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                    内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../practice/">
+            
+                <a href="../practice/">
+            
+                    
+                    实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../practice/file.html">
+            
+                <a href="../practice/file.html">
+            
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../practice/network.html">
+            
+                <a href="../practice/network.html">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../practice/library.html">
+            
+                <a href="../practice/library.html">
+            
+                    
+                    库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="../practice/timer.html">
+            
+                <a href="../practice/timer.html">
+            
+                    
+                    定时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../ui/">
+            
+                <a href="../ui/">
+            
+                    
+                    界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../nginx/">
+            
+                <a href="../../nginx/">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../nginx/base.html">
+            
+                <a href="../../nginx/base.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../tpns/">
+            
+                <a href="../../tpns/">
+            
+                    
+                    tpns
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../tpns/key.html">
+            
+                <a href="../../tpns/key.html">
+            
+                    
+                    关键信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../av/">
+            
+                <a href="../../av/">
+            
+                    
+                    音视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../av/capture.html">
+            
+                <a href="../../av/capture.html">
+            
+                    
+                    采集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../av/encode.html">
+            
+                <a href="../../av/encode.html">
+            
+                    
+                    编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../av/package.html">
+            
+                <a href="../../av/package.html">
+            
+                    
+                    封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../av/streaming.html">
+            
+                <a href="../../av/streaming.html">
+            
+                    
+                    推流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../system/">
+            
+                <a href="../../system/">
+            
+                    
+                    深入理解计算机系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../system/information.html">
+            
+                <a href="../../system/information.html">
+            
+                    
+                    信息就是位+上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../system/storage.html">
+            
+                <a href="../../system/storage.html">
+            
+                    
+                    信息的表示和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >线程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="runloop">Runloop</h1>
+<ul>
+<li>Runloop &#x5B9E;&#x9645;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x7BA1;&#x7406;&#x9700;&#x8981;&#x5176;&#x5904;&#x7406;&#x7684;&#x4E8B;&#x4EF6;&#x548C;&#x6D88;&#x606F;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x7684;&#x5FAA;&#x73AF;&#x51FD;&#x6570;</li>
+<li>Runloop &#x7684;&#x521B;&#x5EFA;&#x53D1;&#x751F;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x65F6;&#xFF0C;Runloop&#x7684;&#x9500;&#x6BC1;&#x53D1;&#x751F;&#x5728;&#x7EBF;&#x7A0B;&#x7ED3;&#x675F;&#x65F6;&#xFF0C; &#x53EA;&#x80FD;&#x5728;&#x7EBF;&#x7A0B;&#x5185;&#x90E8;&#x83B7;&#x53D6;&#x5176;Runloop</li>
+<li>Runloop &#x7531;&#x82E5;&#x5E72;&#x4E2A;mode&#x7EC4;&#x6210;&#xFF0C;&#x6BCF;&#x4E2A;mode&#x5305;&#x542B;&#x82E5;&#x5E72;&#x4E2A;Source/Timer/Observer item</li>
+<li>&#x4E00;&#x4E2A;item&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x591A;&#x4E2A;mode, &#x5982;&#x679C;&#x4E00;&#x4E2A;mode&#x4E00;&#x4E2A;item&#x90FD;&#x6CA1;&#x6709;&#xFF0C;Runloop&#x4F1A;&#x76F4;&#x63A5;&#x9000;&#x51FA;</li>
+<li>&#x6BCF;&#x5F53; RunLoop &#x7684;&#x5185;&#x5BB9;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;RunLoop &#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x5C06; _commonModeItems &#x91CC;&#x7684; Source/Observer/Timer &#x540C;&#x6B65;&#x5230;&#x5177;&#x6709; &quot;Common&quot; &#x6807;&#x8BB0;&#x7684;&#x6240;&#x6709;Mode&#x91CC;&#x3002;</li>
+<li>kCFRunLoopDefaultMode(mode name) &#x548C; UITrackingRunLoopMode&#xFF08;mode name&#xFF09; &#x90FD;&#x88AB;&#x6807;&#x8BB0;&#x4F4D;mode&#x5C5E;&#x6027;</li>
+<li><p>Runloop &#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;</p>
+<ol>
+<li>AutoreleasePool, &#x901A;&#x8FC7;Observer&#x5B9E;&#x73B0;</li>
+<li>&#x4E8B;&#x4EF6;&#x54CD;&#x5E94;&#x548C;&#x624B;&#x52BF;&#x8BC6;&#x522B;</li>
+<li>&#x754C;&#x9762;&#x66F4;&#x65B0;&#xFF0C; &#x901A;&#x8FC7;Observer&#x5B9E;&#x73B0;</li>
+<li>PerformSelecter &#x4F1A;&#x5728;&#x7EBF;&#x7A0B;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;timer</li>
+</ol>
+</li>
+<li><p>Runloop &#x4E00;&#x4E2A;&#x65F6;&#x523B;&#x53EA;&#x80FD;&#x76D1;&#x542C;&#x4E00;&#x4E2A;mode, &#x53EA;&#x6709;&#x8BA1;&#x65F6;&#x5668;&#x5173;&#x8054;&#x7684;mode&#x5904;&#x4E8E;&#x76D1;&#x542C;&#x72B6;&#x6001;&#xFF0C;&#x8BA1;&#x65F6;&#x5668;&#x624D;&#x4F1A;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x4EFB;&#x52A1;</p>
+</li>
+<li>&#x7EBF;&#x7A0B;&#x9700;&#x8981;&#x542F;&#x52A8;Runloop&#x7684;&#x573A;&#x666F;<ol>
+<li>&#x4F7F;&#x7528;NSport&#x6216;&#x8005;&#x81EA;&#x5B9A;&#x4E49;&#x8F93;&#x5165;&#x6E90;&#x4E0E;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x901A;&#x4FE1;</li>
+<li>&#x4F7F;&#x7528;&#x8BA1;&#x65F6;&#x5668; </li>
+<li>&#x5728;&#x4E00;&#x4E2A;Cocoa&#x5E94;&#x7528;&#x4E2D;&#x4F7F;&#x7528;performSelector&#x76F8;&#x5173;&#x65B9;&#x6CD5;</li>
+</ol>
+</li>
+</ul>
+<h1 id="gcd">GCD</h1>
+<ul>
+<li>&#x4EFB;&#x52A1;<ol>
+<li>&#x540C;&#x6B65;&#x6267;&#x884C;&#xFF1A;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x8FD4;&#x56DE;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x5177;&#x5907;&#x5F00;&#x542F;&#x65B0;&#x7EBF;&#x7A0B;&#x7684;&#x80FD;&#x529B;</li>
+<li>&#x5F02;&#x6B65;&#x6267;&#x884C;&#xFF1A;&#x65E0;&#x9700;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x7684;&#x5B8C;&#x6210;&#xFF0C;&#x5177;&#x5907;&#x5F00;&#x542F;&#x65B0;&#x7EBF;&#x7A0B;&#x7684;&#x80FD;&#x529B;</li>
+<li>&#x4EFB;&#x52A1;&#x7684;&#x521B;&#x5EFA;<pre><code>// &#x540C;&#x6B65;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x521B;&#x5EFA;&#x65B9;&#x6CD5;
+dispatch_sync(queue, ^{
+   // &#x8FD9;&#x91CC;&#x653E;&#x540C;&#x6B65;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x4EE3;&#x7801;
+});
+// &#x5F02;&#x6B65;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x521B;&#x5EFA;&#x65B9;&#x6CD5;
+dispatch_async(queue, ^{
+   // &#x8FD9;&#x91CC;&#x653E;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x4EE3;&#x7801;
+});
+</code></pre></li>
+</ol>
+</li>
+<li><p>&#x961F;&#x5217;</p>
+<ol>
+<li>&#x4E32;&#x884C;&#x961F;&#x5217;&#xFF1A;&#x4E32;&#x884C;&#x6267;&#x884C;&#x4EFB;&#x52A1;</li>
+<li>&#x5E76;&#x53D1;&#x961F;&#x5217;&#xFF1A;&#x8BA9;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#x5E76;&#x53D1;&#x6267;&#x884C;</li>
+<li>&#x961F;&#x5217;&#x7684;&#x83B7;&#x53D6;&#xFF1A;dispatch_get_main_queue(), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);</li>
+<li>&#x961F;&#x5217;&#x7684;&#x521B;&#x5EFA;&#xFF1A;dispatch_queue_create(&quot;net.bujige.testQueue&quot;, DISPATCH_QUEUE_CONCURRENT);</li>
+</ol>
+</li>
+<li><p>&#x4EFB;&#x52A1;&#x548C;&#x961F;&#x5217;&#x7684;&#x7EC4;&#x5408;</p>
+<ol>
+<li>&#x540C;&#x6B65;&#x6267;&#x884C; + &#x5E76;&#x53D1;&#x961F;&#x5217; : &#x5F53;&#x524D;&#x7EBF;&#x7A0B;</li>
+<li>&#x5F02;&#x6B65;&#x6267;&#x884C; + &#x5E76;&#x53D1;&#x961F;&#x5217; : &#x5F00;&#x542F;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;</li>
+<li>&#x540C;&#x6B65;&#x6267;&#x884C; + &#x4E32;&#x884C;&#x961F;&#x5217; : &#x5F53;&#x524D;&#x7EBF;&#x7A0B;</li>
+<li>&#x5F02;&#x6B65;&#x6267;&#x884C; + &#x4E32;&#x884C;&#x961F;&#x5217; : &#x5F00;&#x542F;&#x65B0;&#x7EBF;&#x7A0B;</li>
+<li>&#x540C;&#x6B65;&#x6267;&#x884C; + &#x4E3B;&#x961F;&#x5217; : &#x4E3B;&#x7EBF;&#x7A0B;</li>
+<li>&#x5F02;&#x6B65;&#x6267;&#x884C; + &#x4E3B;&#x961F;&#x5217; : &#x4E3B;&#x7EBF;&#x7A0B;
+&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E3A;&#x4E3B;&#x7EBF;&#x7A0B;
+<img src="image/compose.png" alt="" title="&#x7EC4;&#x5408;"></li>
+</ol>
+</li>
+<li><p>GCD</p>
+<pre><code>NSTimeInterval period = 1.0; //&#x8BBE;&#x7F6E;&#x65F6;&#x95F4;&#x95F4;&#x9694;
+  dispatch_queue_t queue = dispatch_get_main_queue();
+  dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+  dispatch_source_set_timer(_timer, dispatch_walltime(NULL, 0), period * NSEC_PER_SEC, 0); //&#x6BCF;&#x79D2;&#x6267;&#x884C;
+  dispatch_source_set_event_handler(_timer, ^{
+      //&#x5728;&#x8FD9;&#x91CC;&#x6267;&#x884C;&#x4E8B;&#x4EF6;
+      static int count = 0;
+      NSLog(@&quot;gcd %d&quot;, count++);
+  });
+
+  dispatch_resume(_timer);
+</code></pre></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 进阶">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="runtime.html" class="navigation navigation-next " aria-label="Next page: runtime">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"线程","level":"1.6.2.1","depth":3,"next":{"title":"runtime","level":"1.6.2.2","depth":3,"path":"oc/advance/runtime.md","ref":"oc/advance/runtime.md","articles":[]},"previous":{"title":"进阶","level":"1.6.2","depth":2,"path":"oc/advance/README.md","ref":"oc/advance/README.md","articles":[{"title":"线程","level":"1.6.2.1","depth":3,"path":"oc/advance/thread.md","ref":"oc/advance/thread.md","articles":[]},{"title":"runtime","level":"1.6.2.2","depth":3,"path":"oc/advance/runtime.md","ref":"oc/advance/runtime.md","articles":[]},{"title":"内存","level":"1.6.2.3","depth":3,"path":"oc/advance/memory.md","ref":"oc/advance/memory.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/advance/thread.md","mtime":"2020-10-15T08:00:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T08:01:25.550Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
