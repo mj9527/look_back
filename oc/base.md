@@ -14,9 +14,18 @@
 
 ![](image/property.png "属性对比")
 
+# 类
+- @class 类前向声明 
+- isMemberOfClass 测试类中的直接成员关系
+- isKindOfClass 检测继承层次的关系
+- instancetype 表示返回的初始类型和它的初始化类型相同
+
 # 分类和扩展
 - 扩展是一种特殊的分类，扩展没有名字，扩展可以扩展属性，成员变量和方法
 - 分类只能扩展方法
+
+# 协议
+- conformsToProtocol 检查对象是否遵循某一个协议
 
 # 枚举类型
 NS_ENUM 和NS_OPTIONS 指定底层数据类型，NS_OPTIONS 用于位掩码
@@ -135,6 +144,43 @@ void TestKVO() {
 - initialize 方法在main函数之后调用
 - 第一次调用类方法时加载，属于懒加载
 - 主要用来初始化全局变量和静态变量
-- 子类没有initialize 方法也会调用父类的方法
+- 子类没有initialize 方法也会调用父类的方法，走的是发送消息的流程
 
 # SEL 就是C语言的指针函数
+
+# Block
+- block 是一种OC对象，可以用于赋值，当参数传递，当用于函数参数时, block 应该放在参数列表的最后一个
+- block 可以捕获外部作用域的变量，但默认无法修改，需要修改的变量使用__block修饰
+- block 需要维持其作用域捕获的变量，所以属性定义为copy
+- 语法
+```
+    // 变量定义
+    int (^addFunc)(int, int) = ^int(int a, int b) {
+        return (a+b);
+    };
+
+    // 属性定义
+    @property(nonatomic, copy) int(^addP)(int, int);
+
+    // 类型定义
+    typedef int(^addType)(int, int);
+
+    // 函数参数
+    -(void) useBlockParam:(int(^)(int, int)) func{
+        NSLog(@"use block param %d", func(1,1));
+    }
+```
+
+# NSNotification
+- 单例 + 观察者模式
+```
+     // object : nil 接收所有发送者事件
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotify:) name:@"stop" object:nil];
+    
+    -(void) onNotify:(NSNotification*)notification {
+        NSLog(@"recv notify %@", notification);
+    }
+
+    // 发送消息
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"stop" object:self userInfo:nil];
+```

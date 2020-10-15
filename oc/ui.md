@@ -42,6 +42,13 @@ UIView->UIWindow->UIApplication
 - 如果当前这个view不是控制器的view，那么父控件就是上一个响应者
 ![](image/view.png "事件响应")
 
+# UIApplication
+- 仅有一个UIApplication实例, [UIApplication sharedApplication]获取实例指针
+
+# UIView
+- frame 和center 坐标是相对于父视图
+- bounds 是相对于自身，通常情况下就是(0, 0, width, height)
+
 
 
 
