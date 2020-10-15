@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="class.html" />
+    <link rel="next" href="class.md" />
     
     
     <link rel="prev" href="../" />
@@ -297,9 +297,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1.1" data-path="class.html">
+        <li class="chapter " data-level="1.6.1.1" data-path="class.md">
             
-                <a href="class.html">
+                <span>
             
                     
                     类
@@ -739,52 +739,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#x7B26;&#x53F7;">&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#x7B26;&#x53F7;</h1>
-<p><img src="image/format.png" alt="" title="&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;"></p>
-<h1 id="&#x679A;&#x4E3E;&#x7C7B;&#x578B;">&#x679A;&#x4E3E;&#x7C7B;&#x578B;</h1>
-<p>NS_ENUM &#x548C;NS_OPTIONS &#x6307;&#x5B9A;&#x5E95;&#x5C42;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;NS_OPTIONS &#x7528;&#x4E8E;&#x4F4D;&#x63A9;&#x7801;</p>
-<pre><code>enum Sex {
-    Sex_Man,
-    Sex_Woman,
-};
-enum Sex b = Sex_Man;
+                                <pre><code># Foundation&#x548C;Core Foundation&#x7684;&#x533A;&#x522B;
+- Foundation &#x4F7F;&#x7528;OC&#x5B9E;&#x73B0;&#xFF0C;Core Foundation &#x4F7F;&#x7528;C&#x5B9E;&#x73B0;
+- Foundation &#x548C;Core Foundation &#x5BF9;&#x8C61;&#x95F4;&#x7684;&#x8F6C;&#x6362;: &#x4FD7;&#x79F0;&#x6865;&#x63A5;
+- Foundation &#x7C7B;&#x4EE5;NS&#x5F00;&#x5934;, Core Foundation&#x4EE5;CF&#x5F00;&#x5934;
 
-typedef enum {
-    UserSex_Man,
-    UserSex_Woman
-}UserSex;
-UserSex c = UserSex_Man;
+## OC(Foundation)strOC -&gt;C(Core Foundation) strC
+- __bridge &#x6CA1;&#x6709;&#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x4F9D;&#x7136;&#x7531;OC&#x7BA1;&#x7406;
+- __bridge_retianed &#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;strC &#x5FC5;&#x987B;&#x81EA;&#x5DF1;&#x624B;&#x52A8;&#x91CA;&#x653E;&#x5185;&#x5B58;
 
-typedef NS_ENUM(NSInteger, CYLSex) {
-    CYLSexMan,
-    CYLSexWoman,
-};
-</code></pre><h1 id="foundation&#x548C;core-foundation&#x7684;&#x533A;&#x522B;">Foundation&#x548C;Core Foundation&#x7684;&#x533A;&#x522B;</h1>
+## C(Core Foundation) strC -&gt; OC(Foudation) strOC
+- __bridge &#x6CA1;&#x6709;&#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x4F9D;&#x7136;&#x7531;C&#x7BA1;&#x7406;
+- __bridge_transfer &#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x7531;OC&#x7BA1;&#x7406;
+
+# NS_ASSUME_NONNULL_BEGIN &#x548C; NS_ASSUME_NONNULL_END
+&#x5B8F;&#x4E4B;&#x95F4;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x6709;&#x7B80;&#x5355;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x88AB;&#x5047;&#x5B9A;&#x4E3A;nonnull
+
+# KVO
+- &#x5F53;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x88AB;&#x6CE8;&#x518C;&#x89C2;&#x5BDF;&#x8005;&#x65F6;&#xFF0C;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x7C7B;&#x7EE7;&#x627F;&#x81EA;&#x6B64;&#x7C7B;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7C7B;&#x7684;isa&#x6307;&#x9488;&#x6307;&#x5411;&#x65B0;&#x751F;&#x6210;&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x8FD9;&#x6837;&#x88AB;&#x89C2;&#x5BDF;&#x7684;&#x5BF9;&#x8C61;&#x5C31;&#x53D8;&#x6210;&#x8FD9;&#x4E2A;&#x4E2D;&#x95F4;&#x7C7B;&#xFF0C;
+&#x540C;&#x65F6;&#x91CD;&#x65B0;&#x5C5E;&#x6027;&#x7684;setter&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x65B0;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x4F1A;&#x4F9D;&#x6B21;&#x901A;&#x77E5;&#x6CE8;&#x518C;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x5BF9;&#x8C61;
+- &#x952E;&#x503C;&#x89C2;&#x5BDF;&#x901A;&#x77E5;&#x4F9D;&#x8D56;&#x4E8E;NSObject &#x7684;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;: willChangeValueForKey: &#x548C; didChangevlueForKey:&#xFF1B;&#x5728;&#x4E00;&#x4E2A;&#x88AB;&#x89C2;&#x5BDF;&#x5C5E;&#x6027;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x4E4B;&#x524D;&#xFF0C; willChangeValueForKey: &#x4E00;&#x5B9A;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x5C31; &#x4F1A;&#x8BB0;&#x5F55;&#x65E7;&#x7684;&#x503C;&#x3002;&#x800C;&#x5F53;&#x6539;&#x53D8;&#x53D1;&#x751F;&#x540E;&#xFF0C;didChangeValueForKey: &#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x7EE7;&#x800C; observeValueForKey:ofObject:change:context: &#x4E5F;&#x4F1A;&#x88AB;&#x8C03;&#x7528;
+- KVO &#x624B;&#x5DE5;&#x89E6;&#x53D1;
+</code></pre><p>@property (nonatomic, strong) NSDate *now;</p>
 <ul>
-<li>Foundation &#x4F7F;&#x7528;OC&#x5B9E;&#x73B0;&#xFF0C;Core Foundation &#x4F7F;&#x7528;C&#x5B9E;&#x73B0;</li>
-<li>Foundation &#x548C;Core Foundation &#x5BF9;&#x8C61;&#x95F4;&#x7684;&#x8F6C;&#x6362;: &#x4FD7;&#x79F0;&#x6865;&#x63A5;</li>
-<li>Foundation &#x7C7B;&#x4EE5;NS&#x5F00;&#x5934;, Core Foundation&#x4EE5;CF&#x5F00;&#x5934;</li>
-</ul>
-<h2 id="ocfoundationstroc--ccore-foundation-strc">OC(Foundation)strOC -&gt;C(Core Foundation) strC</h2>
-<ul>
-<li>__bridge &#x6CA1;&#x6709;&#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x4F9D;&#x7136;&#x7531;OC&#x7BA1;&#x7406;</li>
-<li>__bridge_retianed &#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;strC &#x5FC5;&#x987B;&#x81EA;&#x5DF1;&#x624B;&#x52A8;&#x91CA;&#x653E;&#x5185;&#x5B58;</li>
-</ul>
-<h2 id="ccore-foundation-strc---ocfoudation-stroc">C(Core Foundation) strC -&gt; OC(Foudation) strOC</h2>
-<ul>
-<li>__bridge &#x6CA1;&#x6709;&#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x4F9D;&#x7136;&#x7531;C&#x7BA1;&#x7406;</li>
-<li>__bridge_transfer &#x8F6C;&#x79FB;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x7531;OC&#x7BA1;&#x7406;</li>
-</ul>
-<h1 id="nsassumenonnullbegin-&#x548C;-nsassumenonnullend">NS_ASSUME_NONNULL_BEGIN &#x548C; NS_ASSUME_NONNULL_END</h1>
-<p>&#x5B8F;&#x4E4B;&#x95F4;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x6709;&#x7B80;&#x5355;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x88AB;&#x5047;&#x5B9A;&#x4E3A;nonnull</p>
-<h1 id="kvo">KVO</h1>
-<ul>
-<li>&#x5F53;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x88AB;&#x6CE8;&#x518C;&#x89C2;&#x5BDF;&#x8005;&#x65F6;&#xFF0C;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x7C7B;&#x7EE7;&#x627F;&#x81EA;&#x6B64;&#x7C7B;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7C7B;&#x7684;isa&#x6307;&#x9488;&#x6307;&#x5411;&#x65B0;&#x751F;&#x6210;&#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x8FD9;&#x6837;&#x88AB;&#x89C2;&#x5BDF;&#x7684;&#x5BF9;&#x8C61;&#x5C31;&#x53D8;&#x6210;&#x8FD9;&#x4E2A;&#x4E2D;&#x95F4;&#x7C7B;&#xFF0C;
-&#x540C;&#x65F6;&#x91CD;&#x65B0;&#x5C5E;&#x6027;&#x7684;setter&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x65B0;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x4F1A;&#x4F9D;&#x6B21;&#x901A;&#x77E5;&#x6CE8;&#x518C;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x5BF9;&#x8C61;</li>
-<li>&#x952E;&#x503C;&#x89C2;&#x5BDF;&#x901A;&#x77E5;&#x4F9D;&#x8D56;&#x4E8E;NSObject &#x7684;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;: willChangeValueForKey: &#x548C; didChangevlueForKey:&#xFF1B;&#x5728;&#x4E00;&#x4E2A;&#x88AB;&#x89C2;&#x5BDF;&#x5C5E;&#x6027;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x4E4B;&#x524D;&#xFF0C; willChangeValueForKey: &#x4E00;&#x5B9A;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x5C31; &#x4F1A;&#x8BB0;&#x5F55;&#x65E7;&#x7684;&#x503C;&#x3002;&#x800C;&#x5F53;&#x6539;&#x53D8;&#x53D1;&#x751F;&#x540E;&#xFF0C;didChangeValueForKey: &#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x7EE7;&#x800C; observeValueForKey:ofObject:change:context: &#x4E5F;&#x4F1A;&#x88AB;&#x8C03;&#x7528;</li>
-<li>KVO &#x624B;&#x5DE5;&#x89E6;&#x53D1;
-```
-@property (nonatomic, strong) NSDate *now;</li>
 <li><p>(void)viewDidLoad
 {
   [super viewDidLoad];</p>
@@ -892,7 +869,7 @@ void TestKVO() {
                 </a>
                 
                 
-                <a href="class.html" class="navigation navigation-next " aria-label="Next page: 类">
+                <a href="class.md" class="navigation navigation-next " aria-label="Next page: 类">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -903,7 +880,7 @@ void TestKVO() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"基础","level":"1.6.1","depth":2,"next":{"title":"类","level":"1.6.1.1","depth":3,"path":"oc/base/class.md","ref":"oc/base/class.md","articles":[]},"previous":{"title":"Object-C","level":"1.6","depth":1,"path":"oc/README.md","ref":"oc/README.md","articles":[{"title":"基础","level":"1.6.1","depth":2,"path":"oc/base/base.md","ref":"oc/base/base.md","articles":[{"title":"类","level":"1.6.1.1","depth":3,"path":"oc/base/class.md","ref":"oc/base/class.md","articles":[]},{"title":"基础数据类型","level":"1.6.1.2","depth":3,"path":"oc/base/datatype.md","ref":"oc/base/datatype.md","articles":[]},{"title":"数组","level":"1.6.1.3","depth":3,"path":"oc/base/array.md","ref":"oc/base/array.md","articles":[]},{"title":"字典","level":"1.6.1.4","depth":3,"path":"oc/base/dictionary.md","ref":"oc/base/dictionary.md","articles":[]},{"title":"块","level":"1.6.1.5","depth":3,"path":"oc/base/block.md","ref":"oc/base/block.md","articles":[]}]},{"title":"进阶","level":"1.6.2","depth":2,"path":"oc/advance/README.md","ref":"oc/advance/README.md","articles":[{"title":"线程","level":"1.6.2.1","depth":3,"path":"oc/advance/thread.md","ref":"oc/advance/thread.md","articles":[]},{"title":"runtime","level":"1.6.2.2","depth":3,"path":"oc/advance/runtime.md","ref":"oc/advance/runtime.md","articles":[]},{"title":"内存","level":"1.6.2.3","depth":3,"path":"oc/advance/memory.md","ref":"oc/advance/memory.md","articles":[]}]},{"title":"实践","level":"1.6.3","depth":2,"path":"oc/practice/README.md","ref":"oc/practice/README.md","articles":[{"title":"文件","level":"1.6.3.1","depth":3,"path":"oc/practice/file.md","ref":"oc/practice/file.md","articles":[]},{"title":"网络","level":"1.6.3.2","depth":3,"path":"oc/practice/network.md","ref":"oc/practice/network.md","articles":[]},{"title":"库","level":"1.6.3.3","depth":3,"path":"oc/practice/library.md","ref":"oc/practice/library.md","articles":[]},{"title":"定时器","level":"1.6.3.4","depth":3,"path":"oc/practice/timer.md","ref":"oc/practice/timer.md","articles":[]}]},{"title":"界面","level":"1.6.4","depth":2,"path":"oc/ui/README.md","ref":"oc/ui/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/base/base.md","mtime":"2020-10-15T07:38:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T08:01:25.550Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"基础","level":"1.6.1","depth":2,"next":{"title":"类","level":"1.6.1.1","depth":3,"path":"oc/base/class.md","ref":"oc/base/class.md","articles":[]},"previous":{"title":"Object-C","level":"1.6","depth":1,"path":"oc/README.md","ref":"oc/README.md","articles":[{"title":"基础","level":"1.6.1","depth":2,"path":"oc/base/base.md","ref":"oc/base/base.md","articles":[{"title":"类","level":"1.6.1.1","depth":3,"path":"oc/base/class.md","ref":"oc/base/class.md","articles":[]},{"title":"基础数据类型","level":"1.6.1.2","depth":3,"path":"oc/base/datatype.md","ref":"oc/base/datatype.md","articles":[]},{"title":"数组","level":"1.6.1.3","depth":3,"path":"oc/base/array.md","ref":"oc/base/array.md","articles":[]},{"title":"字典","level":"1.6.1.4","depth":3,"path":"oc/base/dictionary.md","ref":"oc/base/dictionary.md","articles":[]},{"title":"块","level":"1.6.1.5","depth":3,"path":"oc/base/block.md","ref":"oc/base/block.md","articles":[]}]},{"title":"进阶","level":"1.6.2","depth":2,"path":"oc/advance/README.md","ref":"oc/advance/README.md","articles":[{"title":"线程","level":"1.6.2.1","depth":3,"path":"oc/advance/thread.md","ref":"oc/advance/thread.md","articles":[]},{"title":"runtime","level":"1.6.2.2","depth":3,"path":"oc/advance/runtime.md","ref":"oc/advance/runtime.md","articles":[]},{"title":"内存","level":"1.6.2.3","depth":3,"path":"oc/advance/memory.md","ref":"oc/advance/memory.md","articles":[]}]},{"title":"实践","level":"1.6.3","depth":2,"path":"oc/practice/README.md","ref":"oc/practice/README.md","articles":[{"title":"文件","level":"1.6.3.1","depth":3,"path":"oc/practice/file.md","ref":"oc/practice/file.md","articles":[]},{"title":"网络","level":"1.6.3.2","depth":3,"path":"oc/practice/network.md","ref":"oc/practice/network.md","articles":[]},{"title":"库","level":"1.6.3.3","depth":3,"path":"oc/practice/library.md","ref":"oc/practice/library.md","articles":[]},{"title":"定时器","level":"1.6.3.4","depth":3,"path":"oc/practice/timer.md","ref":"oc/practice/timer.md","articles":[]}]},{"title":"界面","level":"1.6.4","depth":2,"path":"oc/ui/README.md","ref":"oc/ui/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/base/base.md","mtime":"2020-10-15T08:02:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T08:05:43.153Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
