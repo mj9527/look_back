@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../practice/" />
+    <link rel="next" href="runloop.html" />
     
     
     <link rel="prev" href="runtime.html" />
@@ -283,9 +283,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../base/base.html">
+        <li class="chapter " data-level="1.6.1" data-path="./">
             
-                <a href="../base/base.html">
+                <a href="./">
             
                     
                     基础
@@ -297,9 +297,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1.1" data-path="../base/class.html">
+        <li class="chapter " data-level="1.6.1.1" data-path="class.html">
             
-                <a href="../base/class.html">
+                <a href="class.html">
             
                     
                     类
@@ -310,9 +310,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.1.2" data-path="../base/datatype.html">
+        <li class="chapter " data-level="1.6.1.2" data-path="datatype.html">
             
-                <a href="../base/datatype.html">
+                <a href="datatype.html">
             
                     
                     原始类型
@@ -323,35 +323,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.1.3" data-path="../base/array.html">
+        <li class="chapter " data-level="1.6.1.3" data-path="block.html">
             
-                <a href="../base/array.html">
-            
-                    
-                    数组
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.1.4" data-path="../base/dictionary.html">
-            
-                <a href="../base/dictionary.html">
-            
-                    
-                    字典
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.1.5" data-path="../base/block.html">
-            
-                <a href="../base/block.html">
+                <a href="block.html">
             
                     
                     块
@@ -362,39 +336,7 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.2" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    进阶
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.6.2.1" data-path="thread.html">
-            
-                <a href="thread.html">
-            
-                    
-                    线程
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.2.2" data-path="runtime.html">
+        <li class="chapter " data-level="1.6.1.4" data-path="runtime.html">
             
                 <a href="runtime.html">
             
@@ -407,12 +349,70 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2.3" data-path="memory.html">
+        <li class="chapter active" data-level="1.6.1.5" data-path="memory.html">
             
                 <a href="memory.html">
             
                     
                     内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="runloop.html">
+            
+                <a href="runloop.html">
+            
+                    
+                    runloop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../advance/">
+            
+                <a href="../advance/">
+            
+                    
+                    进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../advance/thread.html">
+            
+                <a href="../advance/thread.html">
+            
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../advance/foundation.html">
+            
+                <a href="../advance/foundation.html">
+            
+                    
+                    Foundation
             
                 </a>
             
@@ -496,7 +496,33 @@
                 <a href="../practice/kvo.html">
             
                     
-                    KVO
+                    通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="../practice/array.html">
+            
+                <a href="../practice/array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="../practice/dictionary.html">
+            
+                <a href="../practice/dictionary.html">
+            
+                    
+                    字典
             
                 </a>
             
@@ -757,6 +783,11 @@
 <li>UIApplicationMain&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;&#xFF0C;autorelease pool &#x4E0D;&#x4F1A;&#x8FDB;&#x5165;&#x91CA;&#x653E;&#x9636;&#x6BB5;</li>
 <li>UIApplication &#x4F1A;&#x521B;&#x5EFA;main run loop, runloop&#x4F1A;&#x81EA;&#x52A8;&#x5305;&#x542B;autorelease pool</li>
 </ul>
+<h1 id="arc&#x6A21;&#x5F0F;&#x4E0B;&#x65E0;&#x9700;&#x624B;&#x5DE5;&#x628A;&#x5C5E;&#x6027;&#x91CD;&#x7F6E;&#x4E3A;nil">ARC&#x6A21;&#x5F0F;&#x4E0B;&#x65E0;&#x9700;&#x624B;&#x5DE5;&#x628A;&#x5C5E;&#x6027;&#x91CD;&#x7F6E;&#x4E3A;nil</h1>
+<ul>
+<li>&#x7CFB;&#x7EDF;&#x4F1A;&#x81EA;&#x52A8;&#x5728;dealloc&#x7684;&#x65F6;&#x5019;&#x628A;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x91CA;&#x653E;&#xFF0C;&#x6CA1;&#x5FC5;&#x8981;&#x624B;&#x5DE5;&#x628A;&#x53D8;&#x91CF;&#x91CD;&#x7F6E;&#x4E3A;nil(release)</li>
+<li>&#x5BF9;&#x4E8E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x7531;Autorelease Pool&#x7BA1;&#x7406;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x91CA;&#x653E;</li>
+</ul>
 
                                 
                                 </section>
@@ -789,7 +820,7 @@
                 </a>
                 
                 
-                <a href="../practice/" class="navigation navigation-next " aria-label="Next page: 实践">
+                <a href="runloop.html" class="navigation navigation-next " aria-label="Next page: runloop">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -800,7 +831,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"内存","level":"1.6.2.3","depth":3,"next":{"title":"实践","level":"1.6.3","depth":2,"path":"oc/practice/README.md","ref":"oc/practice/README.md","articles":[{"title":"文件","level":"1.6.3.1","depth":3,"path":"oc/practice/file.md","ref":"oc/practice/file.md","articles":[]},{"title":"网络","level":"1.6.3.2","depth":3,"path":"oc/practice/network.md","ref":"oc/practice/network.md","articles":[]},{"title":"库","level":"1.6.3.3","depth":3,"path":"oc/practice/library.md","ref":"oc/practice/library.md","articles":[]},{"title":"定时器","level":"1.6.3.4","depth":3,"path":"oc/practice/timer.md","ref":"oc/practice/timer.md","articles":[]},{"title":"KVO","level":"1.6.3.5","depth":3,"path":"oc/practice/kvo.md","ref":"oc/practice/kvo.md","articles":[]}]},"previous":{"title":"runtime","level":"1.6.2.2","depth":3,"path":"oc/advance/runtime.md","ref":"oc/advance/runtime.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/advance/memory.md","mtime":"2020-10-14T08:45:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T08:38:03.715Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"内存","level":"1.6.1.5","depth":3,"next":{"title":"runloop","level":"1.6.1.6","depth":3,"path":"oc/base/runloop.md","ref":"oc/base/runloop.md","articles":[]},"previous":{"title":"runtime","level":"1.6.1.4","depth":3,"path":"oc/base/runtime.md","ref":"oc/base/runtime.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/base/memory.md","mtime":"2020-10-15T09:23:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T09:43:16.889Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

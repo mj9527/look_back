@@ -60,7 +60,7 @@
     <link rel="next" href="datatype.html" />
     
     
-    <link rel="prev" href="base.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -283,9 +283,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="base.html">
+        <li class="chapter " data-level="1.6.1" data-path="./">
             
-                <a href="base.html">
+                <a href="./">
             
                     
                     基础
@@ -323,38 +323,51 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.1.3" data-path="array.html">
-            
-                <a href="array.html">
-            
-                    
-                    数组
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.1.4" data-path="dictionary.html">
-            
-                <a href="dictionary.html">
-            
-                    
-                    字典
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.1.5" data-path="block.html">
+        <li class="chapter " data-level="1.6.1.3" data-path="block.html">
             
                 <a href="block.html">
             
                     
                     块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="runtime.html">
+            
+                <a href="runtime.html">
+            
+                    
+                    runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                    内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="runloop.html">
+            
+                <a href="runloop.html">
+            
+                    
+                    runloop
             
                 </a>
             
@@ -394,25 +407,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2.2" data-path="../advance/runtime.html">
+        <li class="chapter " data-level="1.6.2.2" data-path="../advance/foundation.html">
             
-                <a href="../advance/runtime.html">
-            
-                    
-                    runtime
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.2.3" data-path="../advance/memory.html">
-            
-                <a href="../advance/memory.html">
+                <a href="../advance/foundation.html">
             
                     
-                    内存
+                    Foundation
             
                 </a>
             
@@ -496,7 +496,33 @@
                 <a href="../practice/kvo.html">
             
                     
-                    KVO
+                    通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="../practice/array.html">
+            
+                <a href="../practice/array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="../practice/dictionary.html">
+            
+                <a href="../practice/dictionary.html">
+            
+                    
+                    字典
             
                 </a>
             
@@ -753,6 +779,49 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x7C7B;">&#x7C7B;</h1>
+<ul>
+<li>@class &#x7C7B;&#x524D;&#x5411;&#x58F0;&#x660E; </li>
+<li>isMemberOfClass &#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#x7684;&#x76F4;&#x63A5;&#x6210;&#x5458;&#x5173;&#x7CFB;</li>
+<li>isKindOfClass &#x68C0;&#x6D4B;&#x7EE7;&#x627F;&#x5C42;&#x6B21;&#x7684;&#x5173;&#x7CFB;</li>
+<li>instancetype &#x8868;&#x793A;&#x8FD4;&#x56DE;&#x7684;&#x521D;&#x59CB;&#x7C7B;&#x578B;&#x548C;&#x5B83;&#x7684;&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x578B;&#x76F8;&#x540C;</li>
+</ul>
+<h2 id="property-&#x5C5E;&#x6027;">property &#x5C5E;&#x6027;</h2>
+<ul>
+<li>atomic (&#x9ED8;&#x8BA4;)&#x540C;&#x4E00;&#x4E2A;&#x65F6;&#x523B;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BBF;&#x95EE;, &#x53EA;&#x80FD;&#x4FDD;&#x8BC1;get&#x548C;set&#x7684;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#xFF0C;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x5BF9;&#x8C61;&#x7684;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#xFF0C;&#x6027;&#x80FD;&#x6BD4;nonatomic&#x6162;20&#x500D;</li>
+<li>nonatomic &#x5141;&#x8BB8;&#x591A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x8BBF;&#x95EE;</li>
+<li>assign(&#x9ED8;&#x8BA4;&#x5C5E;&#x6027;) &#x65E0;&#x9700;&#x66F4;&#x6539;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#xFF0C;&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4F7F;&#x7528;</li>
+<li>retain &#x6307;&#x9488;&#x62F7;&#x8D1D;&#x548C;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x52A0;-</li>
+<li>copy &#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#xFF0C;&#x4E0D;&#x5F71;&#x54CD;&#x539F;&#x6709;&#x5BF9;&#x8C61;</li>
+<li>strong (ARC &#x9ED8;&#x8BA4;&#x5C5E;&#x6027;), &#x76F8;&#x5F53;&#x4E8E;retain</li>
+<li>weak &#x76F8;&#x5F53;&#x4E8E;assign</li>
+<li>@dynamic &#x544A;&#x8BC9;&#x7F16;&#x8BD1;&#x5668;setter&#x548C;getter&#x65B9;&#x6CD5;&#x7531;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;</li>
+<li>&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;atomic, readwrite, assign; oc &#x5BF9;&#x8C61;: atomic readwrite, strong</li>
+</ul>
+<p><img src="image/property.png" alt="" title="&#x5C5E;&#x6027;&#x5BF9;&#x6BD4;"></p>
+<h1 id="&#x5206;&#x7C7B;&#x548C;&#x6269;&#x5C55;">&#x5206;&#x7C7B;&#x548C;&#x6269;&#x5C55;</h1>
+<ul>
+<li>&#x6269;&#x5C55;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x5206;&#x7C7B;&#xFF0C;&#x6269;&#x5C55;&#x6CA1;&#x6709;&#x540D;&#x5B57;&#xFF0C;&#x6269;&#x5C55;&#x53EF;&#x4EE5;&#x6269;&#x5C55;&#x5C5E;&#x6027;&#xFF0C;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x6269;&#x5C55;&#x5FC5;&#x987B;&#x6709;&#x6E90;&#x7C7B;&#x7684;&#x6E90;&#x7801;</li>
+<li>&#x5206;&#x7C7B;&#x53EA;&#x80FD;&#x6269;&#x5C55;&#x65B9;&#x6CD5;</li>
+</ul>
+<h1 id="protocol">protocol</h1>
+<ul>
+<li>conformsToProtocol &#x68C0;&#x67E5;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x9075;&#x5FAA;&#x67D0;&#x4E00;&#x4E2A;&#x534F;&#x8BAE;</li>
+<li>protocol&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;synthesize, &#x9700;&#x8981;&#x624B;&#x52A8;&#x5199;</li>
+</ul>
+<h1 id="voidload">+(void)load</h1>
+<ul>
+<li>load &#x65B9;&#x6CD5;&#x5728;main&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x8C03;&#x7528;</li>
+<li>&#x7C7B;&#x88AB;import&#x65F6;&#x521D;&#x59CB;&#x52A0;&#x8F7D;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x662F;&#x7236;&#x7C7B;&#x4F18;&#x4E8E;&#x5B50;&#x7C7B;&#xFF0C;&#x5B50;&#x7C7B;&#x4F18;&#x4E8E;&#x5206;&#x7C7B;</li>
+<li>&#x4E3B;&#x8981;&#x7528;&#x6765;&#x8FDB;&#x884C;method swizzle</li>
+<li>&#x5B50;&#x7C7B;&#x6CA1;&#x6709;load&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x8C03;&#x7528;&#x7236;&#x7C7B;</li>
+</ul>
+<h1 id="voidinitialize">+(void)initialize</h1>
+<ul>
+<li>initialize &#x65B9;&#x6CD5;&#x5728;main&#x51FD;&#x6570;&#x4E4B;&#x540E;&#x8C03;&#x7528;</li>
+<li>&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x7C7B;&#x65B9;&#x6CD5;&#x65F6;&#x52A0;&#x8F7D;&#xFF0C;&#x5C5E;&#x4E8E;&#x61D2;&#x52A0;&#x8F7D;</li>
+<li>&#x4E3B;&#x8981;&#x7528;&#x6765;&#x521D;&#x59CB;&#x5316;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x548C;&#x9759;&#x6001;&#x53D8;&#x91CF;</li>
+<li>&#x5B50;&#x7C7B;&#x6CA1;&#x6709;initialize &#x65B9;&#x6CD5;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8D70;&#x7684;&#x662F;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;&#x6D41;&#x7A0B;</li>
+</ul>
 
                                 
                                 </section>
@@ -780,7 +849,7 @@
 
             
                 
-                <a href="base.html" class="navigation navigation-prev " aria-label="Previous page: 基础">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 基础">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -796,7 +865,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"类","level":"1.6.1.1","depth":3,"next":{"title":"原始类型","level":"1.6.1.2","depth":3,"path":"oc/base/datatype.md","ref":"oc/base/datatype.md","articles":[]},"previous":{"title":"基础","level":"1.6.1","depth":2,"path":"oc/base/base.md","ref":"oc/base/base.md","articles":[{"title":"类","level":"1.6.1.1","depth":3,"path":"oc/base/class.md","ref":"oc/base/class.md","articles":[]},{"title":"原始类型","level":"1.6.1.2","depth":3,"path":"oc/base/datatype.md","ref":"oc/base/datatype.md","articles":[]},{"title":"数组","level":"1.6.1.3","depth":3,"path":"oc/base/array.md","ref":"oc/base/array.md","articles":[]},{"title":"字典","level":"1.6.1.4","depth":3,"path":"oc/base/dictionary.md","ref":"oc/base/dictionary.md","articles":[]},{"title":"块","level":"1.6.1.5","depth":3,"path":"oc/base/block.md","ref":"oc/base/block.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/base/class.md","mtime":"2020-10-15T08:07:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T08:38:03.715Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"类","level":"1.6.1.1","depth":3,"next":{"title":"原始类型","level":"1.6.1.2","depth":3,"path":"oc/base/datatype.md","ref":"oc/base/datatype.md","articles":[]},"previous":{"title":"基础","level":"1.6.1","depth":2,"path":"oc/base/README.md","ref":"oc/base/README.md","articles":[{"title":"类","level":"1.6.1.1","depth":3,"path":"oc/base/class.md","ref":"oc/base/class.md","articles":[]},{"title":"原始类型","level":"1.6.1.2","depth":3,"path":"oc/base/datatype.md","ref":"oc/base/datatype.md","articles":[]},{"title":"块","level":"1.6.1.3","depth":3,"path":"oc/base/block.md","ref":"oc/base/block.md","articles":[]},{"title":"runtime","level":"1.6.1.4","depth":3,"path":"oc/base/runtime.md","ref":"oc/base/runtime.md","articles":[]},{"title":"内存","level":"1.6.1.5","depth":3,"path":"oc/base/memory.md","ref":"oc/base/memory.md","articles":[]},{"title":"runloop","level":"1.6.1.6","depth":3,"path":"oc/base/runloop.md","ref":"oc/base/runloop.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/base/class.md","mtime":"2020-10-15T08:54:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T09:43:16.889Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

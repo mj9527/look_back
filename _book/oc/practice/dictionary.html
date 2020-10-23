@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>进阶 · GitBook</title>
+        <title>字典 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="thread.html" />
+    <link rel="next" href="../ui/" />
     
     
-    <link rel="prev" href="../base/runloop.html" />
+    <link rel="prev" href="array.html" />
     
 
     </head>
@@ -380,9 +380,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="./">
+        <li class="chapter " data-level="1.6.2" data-path="../advance/">
             
-                <a href="./">
+                <a href="../advance/">
             
                     
                     进阶
@@ -394,9 +394,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.2.1" data-path="thread.html">
+        <li class="chapter " data-level="1.6.2.1" data-path="../advance/thread.html">
             
-                <a href="thread.html">
+                <a href="../advance/thread.html">
             
                     
                     线程
@@ -407,9 +407,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2.2" data-path="foundation.html">
+        <li class="chapter " data-level="1.6.2.2" data-path="../advance/foundation.html">
             
-                <a href="foundation.html">
+                <a href="../advance/foundation.html">
             
                     
                     Foundation
@@ -425,9 +425,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" data-path="../practice/">
+        <li class="chapter " data-level="1.6.3" data-path="./">
             
-                <a href="../practice/">
+                <a href="./">
             
                     
                     实践
@@ -439,9 +439,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.3.1" data-path="../practice/file.html">
+        <li class="chapter " data-level="1.6.3.1" data-path="file.html">
             
-                <a href="../practice/file.html">
+                <a href="file.html">
             
                     
                     文件
@@ -452,9 +452,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.2" data-path="../practice/network.html">
+        <li class="chapter " data-level="1.6.3.2" data-path="network.html">
             
-                <a href="../practice/network.html">
+                <a href="network.html">
             
                     
                     网络
@@ -465,9 +465,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.3" data-path="../practice/library.html">
+        <li class="chapter " data-level="1.6.3.3" data-path="library.html">
             
-                <a href="../practice/library.html">
+                <a href="library.html">
             
                     
                     库
@@ -478,9 +478,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.4" data-path="../practice/timer.html">
+        <li class="chapter " data-level="1.6.3.4" data-path="timer.html">
             
-                <a href="../practice/timer.html">
+                <a href="timer.html">
             
                     
                     定时器
@@ -491,9 +491,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.5" data-path="../practice/kvo.html">
+        <li class="chapter " data-level="1.6.3.5" data-path="kvo.html">
             
-                <a href="../practice/kvo.html">
+                <a href="kvo.html">
             
                     
                     通知
@@ -504,9 +504,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.6" data-path="../practice/array.html">
+        <li class="chapter " data-level="1.6.3.6" data-path="array.html">
             
-                <a href="../practice/array.html">
+                <a href="array.html">
             
                     
                     数组
@@ -517,9 +517,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.7" data-path="../practice/dictionary.html">
+        <li class="chapter active" data-level="1.6.3.7" data-path="dictionary.html">
             
-                <a href="../practice/dictionary.html">
+                <a href="dictionary.html">
             
                     
                     字典
@@ -763,7 +763,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >进阶</a>
+        <a href="../.." >字典</a>
     </h1>
 </div>
 
@@ -778,8 +778,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8FDB;&#x9636;">&#x8FDB;&#x9636;</h1>
-
+                                <h1 id="&#x521B;&#x5EFA;">&#x521B;&#x5EFA;</h1>
+<pre><code>NSDictionary* dic = [NSDictionary dictionaryWithObjects:@[@&quot;mj&quot;, @&quot;jh&quot;, @&quot;zx&quot;] forKeys:@[@&quot;1&quot;, @&quot;2&quot;, @&quot;3&quot;]];
+NSDictionary* dic1 = [NSDictionary dictionaryWithObjectsAndKeys:@&quot;mj&quot;, @&quot;1&quot;, @&quot;jh&quot;, @&quot;2&quot;, @&quot;zx&quot;, @&quot;3&quot;,nil];
+NSDictionary* dic2 = @{@&quot;1&quot;:@&quot;mj&quot;, @&quot;2&quot;:@&quot;jh&quot;, @&quot;3&quot;:@&quot;zx&quot;};
+</code></pre><h1 id="&#x904D;&#x5386;">&#x904D;&#x5386;</h1>
+<pre><code>for (NSString* key in dic2)
+{
+    NSLog(@&quot;%@-%@&quot;, key, dic1[key]);
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -806,12 +814,12 @@
 
             
                 
-                <a href="../base/runloop.html" class="navigation navigation-prev " aria-label="Previous page: runloop">
+                <a href="array.html" class="navigation navigation-prev " aria-label="Previous page: 数组">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="thread.html" class="navigation navigation-next " aria-label="Next page: 线程">
+                <a href="../ui/" class="navigation navigation-next " aria-label="Next page: 界面">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -822,7 +830,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"进阶","level":"1.6.2","depth":2,"next":{"title":"线程","level":"1.6.2.1","depth":3,"path":"oc/advance/thread.md","ref":"oc/advance/thread.md","articles":[]},"previous":{"title":"runloop","level":"1.6.1.6","depth":3,"path":"oc/base/runloop.md","ref":"oc/base/runloop.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/advance/README.md","mtime":"2020-10-15T07:48:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T09:43:16.889Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"字典","level":"1.6.3.7","depth":3,"next":{"title":"界面","level":"1.6.4","depth":2,"path":"oc/ui/README.md","ref":"oc/ui/README.md","articles":[]},"previous":{"title":"数组","level":"1.6.3.6","depth":3,"path":"oc/practice/array.md","ref":"oc/practice/array.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oc/practice/dictionary.md","mtime":"2020-10-15T08:46:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T09:43:16.889Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
