@@ -49,8 +49,17 @@ UIView->UIWindow->UIApplication
 - frame 和center 坐标是相对于父视图
 - bounds 是相对于自身，通常情况下就是(0, 0, width, height)
 
+# MVC 的缺点
+- view contorller 混合了视图处理逻辑和业务逻辑
 
 
+# MVVM
+- view 和view controller 正式联系在一起(ViewController)
+- 新增一个view model 层用于存放业务逻辑（不包含任何UI和UI头文件）
+- 响应式编程，数据驱动界面更新
+- view model 负责各层数据的映射（vName<->vmName<->mName）
 
-
-
+# app 启动顺序
+启动 application:didFinishLaunchingWithOptions: ->applicationDidBecomeActive:
+切后台: applicationWillResignActive:->applicationDidEnterBackground:
+切前台: applicationWillEnterForeground:->applicationDidBecomeActive:

@@ -15,8 +15,17 @@
     // 类型定义
     typedef int(^addType)(int, int);
 
-    // 函数参数
+    // 函数声明中的参数
     -(void) useBlockParam:(int(^)(int, int)) func{
         NSLog(@"use block param %d", func(1,1));
     }
+
+    // 函数调用中的参数
+    [someObject someMethodThatTakesABlock:^returnType (parameters) {...}];
 ```
+
+# @weakify(self)
+- 解析为 __weak __typeof__(self) weak_self = self;
+
+# @strongify(self)
+- 解析为 

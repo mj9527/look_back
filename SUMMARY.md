@@ -31,7 +31,11 @@
         * [通知](oc/practice/kvo.md)
         * [数组](oc/practice/array.md)
         * [字典](oc/practice/dictionary.md)
+        * [调试器](oc/practice/debug.md)
     * [界面](oc/ui/README.md)
+        * [xib](oc/ui/xib.md)
+    * [性能](oc/performance/README.md)
+        * [电量](oc/performance/energy.md)
 * [Nginx](nginx/README.md)
     * [基础](nginx/base.md)
 * [tpns](tpns/README.md)
@@ -50,4 +54,6 @@
     * [数据](meeting/data.md)
     * [分支](meeting/branch.md)
     * [工具](meeting/tool.md)
+    * [框架](meeting/architecture.md)
+    * [耗电](meeting/energy.md)
 

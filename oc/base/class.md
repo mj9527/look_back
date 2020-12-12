@@ -24,6 +24,7 @@
 # protocol
 - conformsToProtocol 检查对象是否遵循某一个协议
 - protocol中定义的属性，编译器不会自动synthesize, 需要手动写
+- 自定义协议都继承<NSObject>协议，方便调用一下基本方法 isMemberOf
 
 # +(void)load
 - load 方法在main函数之前调用
