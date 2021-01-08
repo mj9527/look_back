@@ -94,12 +94,13 @@ zoom: us.zoom.videomeetings.yunshipin
 
 ## 系统诊断-苹果电池诊断
 - 日志开启
-1. 下载profile(有效期7天)，并安装到ios设备
+1. 下载profile(有效期7天)，并安装到ios设备，使用airdrop 传递到电脑
 2. 同步日志信息到电脑（同步之前不要重启设备）
 3. 复现问题，并记录问题出现的日期和时间
 4. 再次同步信息到电脑
-5. macos 日志位置~/Library/Logs/CrashReporter/MobileDevice/[Your_Device_Name]/
+5. macos 日志位置~/Library/Logs/CrashReporter/MobileDevice/[Your_Device_Name]/ (同步手机信息到电脑)
 6. iOS:Go to: Settings.app > Privacy > Analytics > Analytics Data > (Locate the sysdiagnose file and AirDrop it to your Mac computer).
+7. win10: C:\Users\USERID\AppData\Local\Packages\AppleInc.iTunes_devicename\LocalCache\Roaming\AppleComputer\Logs\CrashReporter\MobileDevice\[Your_Device_Name]/DiagnosticLogs/
 
 - 日志关闭
 1. 移除profile
